@@ -103,3 +103,7 @@ body > main > article > section > figure img {
 body > main > article > section > figure > figcaption {
     font-weight: bold;
 }
+
+body, image{
+    width: 25%
+}
