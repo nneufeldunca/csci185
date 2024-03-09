@@ -1,0 +1,163 @@
+body{
+    font-family: "Oswald", sans-serif;
+    background-color: darkgrey;
+    margin: 0;
+}
+
+.container {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 20vw auto;
+    grid-template-rows: 100vh 100vh 100vh 90vh 10vh;
+}
+
+.nav {
+    border: 2px dashed blue;
+    height: 100%;
+    width: 20vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.demoreel {
+    border: 2px dashed red;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio {
+    border: 2px dashed purple;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.portfolio>img {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.portfolio>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    border: 2px dashed yellow;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    border: 2px dashed pink;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    border: 2px dashed orange;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .container {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 20vh 80vh 80vh 80vh 70vh 10vh;
+    }
+    
+    .nav {
+        border: 2px dashed hotpink;
+        height: 20vh;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    } 
+
+    .demoreel {
+        border: 2px dashed red;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .portfolio {
+        border: 2px dashed purple;
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .portfolio>p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .portfolio>img {
+        border: 1px solid black;
+        margin: 10px;
+    }
+    
+    .about {
+        border: 2px dashed yellow;
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact {
+        border: 2px dashed pink;
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer {
+        border: 2px dashed orange;
+        grid-column: 1 / 3;
+        grid-row: 6 / 7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
