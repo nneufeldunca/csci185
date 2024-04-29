@@ -80,18 +80,20 @@ body {
     /* border: 2px dashed red; */
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    max-width: 80vw;
+    max-width: 85vw;
     max-height: 100vh;
+
 }
 
 .demoreel img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 
 .mySlides {
+    
     display: none;
     width: 85vw;
     left: 15vw;
@@ -141,22 +143,27 @@ body {
 }
 
 .portfolio {
-    border: 2px dashed purple;
+    /* border: 2px dashed purple; */
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 33.333333333%);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    object-fit: contain;
 }
 
 .portfolio>img {
-    border: 1px solid rgb(244, 121, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* border: 1px solid rgb(244, 121, 255); */
+    width: 100%;
+    height: 319px;
+    
+}
+
+.portfolio>img:hover {
+    
 }
 
 .about {
-    border: 2px dashed yellow;
+    /* border: 2px dashed yellow; */
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     display: flex;
@@ -165,7 +172,7 @@ body {
 }
 
 .contact {
-    border: 2px dashed pink;
+    /* border: 2px dashed pink; */
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     display: flex;
@@ -174,7 +181,7 @@ body {
 }
 
 .footer {
-    border: 2px dashed orange;
+    /* border: 2px dashed orange; */
     grid-column: 2 / 3;
     grid-row: 5 / 6;
     display: flex;
