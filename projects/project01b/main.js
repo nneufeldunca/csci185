@@ -25,3 +25,16 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
+const mainElement = document.querySelector("#overlay");
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+  mainElement.innerHTML = `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>`;
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
