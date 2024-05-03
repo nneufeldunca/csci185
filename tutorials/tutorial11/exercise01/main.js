@@ -6,6 +6,7 @@ function makeRed() {
 function makeBlue() {
     // your code here...
     console.log('Change the box\'s background color to blue');
+    document.querySelector("#box").style.backgroundColor = "blue";
 }
 
 function makePink() {
