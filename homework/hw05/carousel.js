@@ -12,7 +12,6 @@ const photos = [
 ];
 let idx = 0;
 
-const containerEl = document.querySelector("#current-photo");
 
 /* This function should:
     (1) display the new image inside of the .current-photo container, and 
@@ -20,13 +19,8 @@ const containerEl = document.querySelector("#current-photo");
 */
 function showImage() {
     console.log('Show image');
-    
-    const carouselTemplate = `<img src="${photos[idx]}" alt="current photo" />`;
-
-    containerEl.insertAdjacentHTML("beforeend", carouselTemplate);
-
+   
 }
-
 
 /* This function should set the idx variable 
    to one greater than the current value of idx, 
@@ -36,20 +30,8 @@ function showImage() {
 */
 function forward() {
     console.log('forward');
-    if(idx >= 0) {
-        idx ++;
-        
-    } 
-    if(idx = photos.length) {
-        let idx = 0;
-        
-    }
-    for (idx = 0; idx < photos.length; idx++) {
-        
-      }
-    
-}
 
+}
 
 /* This function should set the idx variable 
    to one less than the current value of idx, 
@@ -59,13 +41,6 @@ function forward() {
 */
 function back() {
     console.log('back');
-    if(idx > 0) {
-        idx --;
-        
-    } 
-    if(idx = 0) {
-        let idx = 9;
-        
-    }
-
+    
 }
+

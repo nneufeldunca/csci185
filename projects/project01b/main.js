@@ -29,9 +29,7 @@ const mainElement = document.querySelector("#overlay");
 
 function on() {
   document.getElementById("overlay").style.display = "block";
-  mainElement.innerHTML = `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>`;
+  mainElement.innerHTML = `<p>THIS IS SUPPOSED TO BE A POP UP OF THE IMAGE CLICKED PLUS A PASSGE BELOW IT, BUT I AM STUMPED ON HOW TO ACOMPLISH THAT.</p>`;
 }
 
 function off() {
